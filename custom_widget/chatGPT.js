@@ -22,6 +22,7 @@ var ajaxCall = (key, url, prompt) => {
       error: function (xhr, status, error) {
         const err = new Error('xhr error');
         err.status = xhr.status;
+        console.log(err);
         reject(err);
       },
     });
