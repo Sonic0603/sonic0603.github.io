@@ -5,7 +5,7 @@ var ajaxCall = (key, url, prompt) => {
       type: "POST",
       dataType: "json",
       data: JSON.stringify({
-        //model: "text-davinci-002",
+        model: "text-davinci-003",
         prompt: prompt,
         max_tokens: 1024,
         n: 1,
@@ -28,8 +28,8 @@ var ajaxCall = (key, url, prompt) => {
   });
 };
 
-//const url = "https://api.openai.com/v1";
-const url = "https://api.openai.com/v1/engines/davinci-codex";
+const url = "https://api.openai.com/v2";
+
 
 (function () {
   const template = document.createElement("template");
