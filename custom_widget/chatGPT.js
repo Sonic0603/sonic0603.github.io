@@ -5,7 +5,7 @@ var ajaxCall = (key, url, prompt) => {
       type: "POST",
       dataType: "json",
       data: JSON.stringify({
-        model: "text-davinci-003",
+        model: "model-id-2",
         prompt: prompt,
         max_tokens: 1024,
         n: 1,
@@ -28,7 +28,7 @@ var ajaxCall = (key, url, prompt) => {
   });
 };
 
-const url = "https://api.openai.com/v2";
+const url = "https://api.openai.com/v1";
 
 
 (function () {
