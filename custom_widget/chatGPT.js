@@ -28,7 +28,8 @@ var ajaxCall = (key, url, prompt) => {
   });
 };
 
-const url = "https://api.openai.com/v1";
+//const url = "https://api.openai.com/v1";
+const url = "https://api.openai.com/v1/engines/davinci-codex";
 
 (function () {
   const template = document.createElement("template");
