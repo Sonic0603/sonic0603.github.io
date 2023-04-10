@@ -5,7 +5,7 @@ var ajaxCall = (key, url, prompt) => {
       type: "POST",
       dataType: "json",
       data: JSON.stringify({
-        model: "gpt-4",
+        model: "gpt-3.5-turbo",
         prompt: prompt,
         max_tokens: 1024,
         n: 1,
@@ -29,7 +29,7 @@ var ajaxCall = (key, url, prompt) => {
   });
 };
 
-const url = "https://api.openai.com/v1";
+const url = "https://api.openai.com/v1/chat";
 
 
 (function () {
