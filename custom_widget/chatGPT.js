@@ -10,7 +10,7 @@ var ajaxCall = (key, url, prompt) => {
           max_tokens: 1024,
           n: 1,*/
           "messages": [{"role": "user", "content": prompt}],
-          temperature: 0.5,
+          temperature: 0.1,
         }),
         headers: {
           "Content-Type": "application/json",
